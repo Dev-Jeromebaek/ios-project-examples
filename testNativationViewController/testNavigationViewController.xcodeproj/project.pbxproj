@@ -15,6 +15,7 @@
 		646F58852564D7C900279189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646F58832564D7C900279189 /* LaunchScreen.storyboard */; };
 		646F588F2564D8C800279189 /* Group 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 646F588E2564D8C800279189 /* Group 8.png */; };
 		646F58922564DB9D00279189 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F58912564DB9D00279189 /* RegisterViewController.swift */; };
+		64823521256508CC00670DE7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64823520256508CC00670DE7 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		646F58862564D7C900279189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		646F588E2564D8C800279189 /* Group 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 8.png"; sourceTree = "<group>"; };
 		646F58912564DB9D00279189 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		64823520256508CC00670DE7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				646F587C2564D7C800279189 /* LoginViewController.swift */,
 				646F58912564DB9D00279189 /* RegisterViewController.swift */,
+				64823520256508CC00670DE7 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				646F58792564D7C800279189 /* AppDelegate.swift in Sources */,
 				646F587B2564D7C800279189 /* SceneDelegate.swift in Sources */,
 				646F58922564DB9D00279189 /* RegisterViewController.swift in Sources */,
+				64823521256508CC00670DE7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
