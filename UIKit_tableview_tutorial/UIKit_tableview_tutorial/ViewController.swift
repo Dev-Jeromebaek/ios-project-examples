@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  testUIKit_tableview_tutorial
+//  UIKit_tableview_tutorial
 //
-//  Created by 백승엽 on 2020/11/19.
+//  Created by 백승엽 on 2020/11/20.
 //
 
 import UIKit
@@ -35,17 +35,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // 셀 리소스 파일 가져오기
-        // xib파일을 Nib 형식으로 변환하는 과정
-//        let myTableViewCellNib = UINib(nibName: "MyTableViewCell", bundle: nil)
+        // nib파일 가져오기
         let tableViewCellNib = UINib(nibName: String(describing: TableViewCell.self), bundle: nil)
         
-        // 셀에 리소스 등록
+        // 셀에 리소스(nib파일) 등록
         self.tableView.register(tableViewCellNib, forCellReuseIdentifier: "tableViewCell")
         
         // 단일 row의 높이
         self.tableView.rowHeight = UITableView.automaticDimension
-        // 단일 row의 예상 높이 (추정치)
+        // 단일 row의 예상 높이 (추정)
         // 높이 추정치를 사용할 때 테이블 뷰는 스크롤 뷰에서 상속된 contentOffset 및 contentSize 속성을 능동적으로 관리한다.
         self.tableView.estimatedRowHeight = 120
         
@@ -58,16 +56,16 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate {
-    
+
 }
 
 extension ViewController: UITableViewDataSource {
-    
+
     // 테이블 뷰 셀의 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.contentArray.count
     }
-    
+
     // 각 Cell에 대한 설정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! TableViewCell
@@ -75,5 +73,8 @@ extension ViewController: UITableViewDataSource {
         cell.userContentLabel.text = contentArray[indexPath.row]
         
         return cell
+        
     }
+
+
 }

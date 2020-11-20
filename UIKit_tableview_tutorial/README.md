@@ -1,4 +1,4 @@
-# testUIKit_tableview_turorial
+# UIKit_tableview_turorial
 
 - .xib / Nib
 - storyboard

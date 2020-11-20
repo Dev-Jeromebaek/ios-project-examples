@@ -1,8 +1,8 @@
 //
 //  TableViewCell.swift
-//  testUIKit_tableview_tutorial
+//  UIKit_tableview_tutorial
 //
-//  Created by 백승엽 on 2020/11/19.
+//  Created by 백승엽 on 2020/11/20.
 //
 
 import Foundation
@@ -13,8 +13,6 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var userProfileImage: UIImageView!
     @IBOutlet var userContentLabel: UILabel!
     
-    // 셀이 렌더링(그려질) 될때 호출
-    // Nib 파일이 불려오면 호출
     override func awakeFromNib() {
         super.awakeFromNib()
         

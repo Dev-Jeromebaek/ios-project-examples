@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  testUIKit_tableview_tutorial
+//  UIKit_tableview_tutorial
 //
-//  Created by 백승엽 on 2020/11/19.
+//  Created by 백승엽 on 2020/11/20.
 //
 
 import UIKit
